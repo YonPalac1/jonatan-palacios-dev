@@ -1,0 +1,85 @@
+---
+import duck from "../utils/images/duck.gif"
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Header from '../components/Header.astro';
+import Marquee from '../components/Marquee.astro';
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
+import Works from '../components/Works.astro';
+import Form from '../components/Form.astro';
+import Footer from '../components/Footer.astro';
+import { Image } from "astro:assets";
+
+---
+
+<Layout title="Portfolio | Jonatan Palacios">
+    <div class="bg-black" id="black"></div>
+    <div class="bg-orange-400" id="loading">
+        <Image class="w-24" src={duck} alt="duck walking while the page is chargin" />
+        <h1 class="text-orange-900 text-[30px]">{"<"} <span id="text"></span> {"/>"}</h1>
+        <p id="chargin">cargando...</p>
+    </div>
+    <Navbar />
+    <Header />
+    <Contact />
+    <Works />
+    <Marquee />
+    <About />
+    <Form />
+    <Footer />
+</Layout>
+<style>
+    div {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow-x: hidden;
+        transition: 2s;
+     }
+     p {
+         position: absolute;
+         bottom: 30px;
+     }
+</style>
+<script>
+    const loading = document.getElementById("loading")
+    const black = document.getElementById("black")
+    const text = document.getElementById("text")
+    const chargin = document.getElementById("chargin")
+
+    setTimeout(() => {
+        loading.style.top = "-100vh";
+        window.scrollTo(0,0);
+        setTimeout(() => {
+            loading.style.display = "none"
+        }, 4000)
+    }, 4000)
+    setTimeout(() => {
+        black.style.opacity = "0";
+        chargin.textContent = "Alli vamos";
+        
+        setTimeout(() => {
+            black.style.display = "none"
+        }, 4500)
+    }, 4500)
+    const worlds = ["React", "Nextjs", "Node", "MySql", "Astro", "Tailwind", "Api rest", "LaPala"]
+    let index = 0
+
+    const showText = () => {
+        if (index >= worlds.length) {
+            index = 0
+        }
+        text.textContent = worlds[index]
+        index++
+        setTimeout(showText, 600) 
+    }
+    showText()
+</script>

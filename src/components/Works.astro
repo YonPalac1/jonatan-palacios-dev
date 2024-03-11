@@ -1,0 +1,44 @@
+---
+import { Image } from "astro:assets"
+import { WORKS } from "../constants/index.js"
+---
+<section class="text-center uppercase pb-24 p-5 text-white" id="works">
+    <h3 class="text-2xl font-bold mb-5">
+        Mis <span class="text-orange-400">trabajos</span>
+    </h3>
+    <div class="p-5 m-auto mt-10 grid grid-cols-1 xl:grid-cols-2 lg:pl-24 lg:pr-24">
+        {
+            WORKS.map((item, i) => {
+                return <div class="col-span-1">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="overflow-hidden rounded-2xl m-auto">
+                    <Image src={item.img} alt="ecommerce projects" />
+                </div>
+                <section class="text-center p-5 lg:text-left">
+                    {
+                        item.tag.map((t, i) => {
+                            return <tag class="border rounded-2xl text-xs p-2 text-gray-300 bg-black mr-2" key={i}>{t}</tag> 
+                        })
+                    }
+                    <div class="p-5 lg:text-left">
+                        <h4 class="font-bold text-orange-400 pb-4">{item.name} | <span class="text-white">{item.type}</span></h4>
+                        <p class="text-xs leading-6">{item.description}</p>
+                        <a href={item.page} class="flex mt-5" target="_blank">Visitar {" "} <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M15 9l-6 6" /><path d="M15 15v-6h-6" /></svg></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+            })
+        }
+        
+    </div>
+</section>
+<style>
+    img {
+        cursor: crosshair;
+        transition: .5s;
+    }
+    img:hover {
+        scale: 1.2;
+    }
+</style>
