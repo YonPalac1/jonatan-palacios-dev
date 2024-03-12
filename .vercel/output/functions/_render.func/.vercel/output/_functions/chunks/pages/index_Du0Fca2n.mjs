@@ -5,19 +5,6 @@ import 'html-escaper';
 import 'clsx';
 import { $ as $$Image } from './generic_BZJEfQLm.mjs';
 
-const duck = new Proxy({"src":"/_astro/duck.D9xn2E7Y.gif","width":383,"height":480,"format":"gif"}, {
-						get(target, name, receiver) {
-							if (name === 'clone') {
-								return structuredClone(target);
-							}
-							if (name === 'fsPath') {
-								return "C:/Users/yona-2/Desktop/portfolio/src/utils/images/duck.gif";
-							}
-							
-							return target[name];
-						}
-					});
-
 const $$Astro$b = createAstro();
 const $$ViewTransitions = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
@@ -40,6 +27,19 @@ const $$Navbar = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Navbar;
   return renderTemplate`${maybeRenderHead()}<nav class="fixed w-full" data-astro-cid-5blmo7yk> <div class="border flex justify-around gap-4 border-gray-700 bg-gray-800 m-auto text-gray-400 max-w-[1024px]" data-astro-cid-5blmo7yk> <a class="cursor-pointer hover:bg-gray-700 w-full pt-3 pb-3 text-center" href="#works" data-astro-cid-5blmo7yk>Trabajos</a> <a class="cursor-pointer hover:bg-gray-700 w-full pt-3 pb-3 text-center" href="#about" data-astro-cid-5blmo7yk>Sobre mi</a> <a class="cursor-pointer text-green-500 hover:bg-green-700 w-full pt-3 pb-3 text-center" href="#contact" data-astro-cid-5blmo7yk>Contactame</a> </div> </nav> `;
 }, "C:/Users/yona-2/Desktop/portfolio/src/components/Navbar.astro", void 0);
+
+const duck = new Proxy({"src":"/_astro/duck.D9xn2E7Y.gif","width":383,"height":480,"format":"gif"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/yona-2/Desktop/portfolio/src/utils/images/duck.gif";
+							}
+							
+							return target[name];
+						}
+					});
 
 var __freeze$1 = Object.freeze;
 var __defProp$1 = Object.defineProperty;
@@ -253,7 +253,7 @@ const WORKS = [{
     name: "Deplace maison",
     description: "Demo de plataforma Ecommerce con estilos en css y detalles de animación con framer motion",
     img: deplace,
-    tag: ["react", "javascript", "magic mouse", "framer motion"],
+    tag: ["react", "javascript", "magicMouse", "framerMotion"],
     type: "Ecommerce | Demo",
     page: "https://deplace-landing.vercel.app/"
 }];
@@ -338,9 +338,7 @@ const $$Works = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Works;
   return renderTemplate`${maybeRenderHead()}<section class="text-center uppercase pb-24 p-5 text-white" id="works" data-astro-cid-ibztcaso> <h3 class="text-2xl font-bold mb-5" data-astro-cid-ibztcaso>
 Mis <span class="text-orange-400" data-astro-cid-ibztcaso>trabajos</span> </h3> <div class="p-5 m-auto mt-10 grid grid-cols-1 xl:grid-cols-2 lg:pl-24 lg:pr-24" data-astro-cid-ibztcaso> ${WORKS.map((item, i) => {
-    return renderTemplate`<div class="col-span-1" data-astro-cid-ibztcaso> <div class="grid grid-cols-1 md:grid-cols-2" data-astro-cid-ibztcaso> <div class="overflow-hidden rounded-2xl m-auto" data-astro-cid-ibztcaso> ${renderComponent($$result, "Image", $$Image, { "src": item.img, "alt": "ecommerce projects", "data-astro-cid-ibztcaso": true })} </div> <section class="text-center p-5 lg:text-left" data-astro-cid-ibztcaso> ${item.tag.map((t, i2) => {
-      return renderTemplate`<tag class="border rounded-2xl text-xs p-2 text-gray-300 bg-black mr-2"${addAttribute(i2, "key")} data-astro-cid-ibztcaso>${t}</tag>`;
-    })} <div class="p-5 text-center lg:text-left" data-astro-cid-ibztcaso> <h4 class="font-bold text-orange-400 pb-4" data-astro-cid-ibztcaso>${item.name} | <span class="text-white" data-astro-cid-ibztcaso>${item.type}</span></h4> <p class="text-xs leading-6" data-astro-cid-ibztcaso>${item.description}</p> <a${addAttribute(item.page, "href")} class="flex mt-5" target="_blank" data-astro-cid-ibztcaso>Visitar ${" "} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-arrow-up-right" data-astro-cid-ibztcaso><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-cid-ibztcaso></path><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" data-astro-cid-ibztcaso></path><path d="M15 9l-6 6" data-astro-cid-ibztcaso></path><path d="M15 15v-6h-6" data-astro-cid-ibztcaso></path></svg></a> </div> </section> </div> </div>`;
+    return renderTemplate`<div class="col-span-1 mb-6" data-astro-cid-ibztcaso> <div class="grid grid-cols-1 md:grid-cols-2" data-astro-cid-ibztcaso> <div class="overflow-hidden rounded-2xl" data-astro-cid-ibztcaso> ${renderComponent($$result, "Image", $$Image, { "src": item.img, "alt": "ecommerce projects", "data-astro-cid-ibztcaso": true })} </div> <section class="text-center pl-1 lg:text-left" data-astro-cid-ibztcaso> <div class="p-2 text-center lg:text-left" data-astro-cid-ibztcaso> <h4 class="font-bold text-orange-400 pb-3" data-astro-cid-ibztcaso>${item.name} | <span class="text-white" data-astro-cid-ibztcaso>${item.type}</span></h4> <p class="text-xs leading-6" data-astro-cid-ibztcaso>${item.description}</p> <a${addAttribute(item.page, "href")} class="flex justify-center lg:justify-start mt-5" target="_blank" data-astro-cid-ibztcaso>Visitar <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-arrow-up-right" data-astro-cid-ibztcaso><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-cid-ibztcaso></path><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" data-astro-cid-ibztcaso></path><path d="M15 9l-6 6" data-astro-cid-ibztcaso></path><path d="M15 15v-6h-6" data-astro-cid-ibztcaso></path></svg></a> </div> </section> </div> </div>`;
   })} </div> </section> `;
 }, "C:/Users/yona-2/Desktop/portfolio/src/components/Works.astro", void 0);
 
@@ -383,7 +381,7 @@ const $$Astro = createAstro();
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Portfolio | Jonatan Palacios", "data-astro-cid-j7pv25f6": true }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="bg-black" id="black" data-astro-cid-j7pv25f6></div> <div class="bg-orange-400" id="loading" data-astro-cid-j7pv25f6> ${renderComponent($$result2, "Image", $$Image, { "class": "w-24", "src": duck, "alt": "duck walking while the page is chargin", "data-astro-cid-j7pv25f6": true })} <h1 class="text-orange-900 text-[30px]" data-astro-cid-j7pv25f6>${"<"} <span id="text" data-astro-cid-j7pv25f6></span> ${"/>"}</h1> <p id="chargin" data-astro-cid-j7pv25f6>cargando...</p> </div> ${renderComponent($$result2, "Navbar", $$Navbar, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "Header", $$Header, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "Contact", $$Contact, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "Works", $$Works, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "Marquee", $$Marquee, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "About", $$About, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "Form", $$Form, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "Footer", $$Footer, { "data-astro-cid-j7pv25f6": true })} ` })}  `;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Portfolio | Jonatan Palacios", "data-astro-cid-j7pv25f6": true }, { "default": ($$result2) => renderTemplate`  ${renderComponent($$result2, "Navbar", $$Navbar, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "Header", $$Header, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "Contact", $$Contact, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "Works", $$Works, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "Marquee", $$Marquee, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "About", $$About, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "Form", $$Form, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "Footer", $$Footer, { "data-astro-cid-j7pv25f6": true })} ` })}  `;
 }, "C:/Users/yona-2/Desktop/portfolio/src/pages/index.astro", void 0);
 
 const $$file = "C:/Users/yona-2/Desktop/portfolio/src/pages/index.astro";

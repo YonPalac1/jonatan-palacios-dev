@@ -1,5 +1,5 @@
 import { renderers } from './renderers.mjs';
-import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_A5FRYx8p.mjs';
+import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_TXFgHlGi.mjs';
 import { A as AstroError, R as ResponseSentError, l as MiddlewareNoDataOrNextCalled, n as MiddlewareNotAResponse, o as ROUTE_TYPE_HEADER, p as REROUTE_DIRECTIVE_HEADER, G as GetStaticPathsRequired, q as InvalidGetStaticPathsReturn, t as InvalidGetStaticPathsEntry, u as GetStaticPathsExpectedParams, v as GetStaticPathsInvalidRouteParam, P as PageNumberParamNotFound, N as NoMatchingStaticPathFound, w as PrerenderDynamicEndpointPathCollide, x as ReservedSlotName, y as renderSlotToString, z as renderJSX, B as chunkToString, C as clientAddressSymbol$1, D as ClientAddressNotAvailable, S as StaticClientAddressNotAvailable, H as responseSentSymbol$1, J as LocalsNotAnObject, K as clientLocalsSymbol, O as ASTRO_VERSION, Q as renderEndpoint, T as renderPage, V as REROUTABLE_STATUS_CODES } from './chunks/astro_CZfBANPu.mjs';
 import { serialize, parse } from 'cookie';
 import { e as appendForwardSlash, j as joinPaths, t as trimSlashes, s as slash, p as prependForwardSlash, r as removeTrailingForwardSlash, f as collapseDuplicateSlashes } from './chunks/astro/assets-service_Bo23wxQH.mjs';
@@ -2053,7 +2053,7 @@ const createExports = (manifest, { middlewareSecret }) => {
 };
 
 const _page0 = () => import('./chunks/generic_DKHRQgWo.mjs');
-const _page1 = () => import('./chunks/index_J5Lf5koS.mjs');
+const _page1 = () => import('./chunks/index_BufP61Ry.mjs');
 const pageMap = new Map([
     ["node_modules/astro/dist/assets/endpoint/generic.js", _page0],
     ["src/pages/index.astro", _page1]
@@ -2065,7 +2065,7 @@ const _manifest = Object.assign(manifest, {
     middleware: onRequest
 });
 const _args = {
-    "middlewareSecret": "985211b5-0e0c-4171-b235-35e405bec4b1"
+    "middlewareSecret": "c4f8a575-51ca-46f1-9baa-d05329224e10"
 };
 const _exports = createExports(_manifest, _args);
 const __astrojsSsrVirtualEntry = _exports.default;
