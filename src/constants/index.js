@@ -23,7 +23,7 @@ export const WORKS = [{
     name: "Deplace maison",
     description: "Demo de plataforma Ecommerce con estilos en css y detalles de animación con framer motion",
     img: deplace,
-    tag: ["react", "javascript", "magic mouse", "framer motion"],
+    tag: ["react", "javascript", "magicMouse", "framerMotion"],
     type: "Ecommerce | Demo",
     page: "https://deplace-landing.vercel.app/"
 }]
