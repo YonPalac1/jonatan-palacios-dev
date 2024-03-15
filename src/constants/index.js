@@ -11,8 +11,16 @@ import img10 from '../utils/images/tailwind.png'
 
 import bdlc from '../utils/works/img3.webp'
 import deplace from '../utils/works/img2.webp'
+import coffee from '../utils/works/img4.webp'
 
 export const WORKS = [{
+    name: "Coffe House | uploading...",
+    description: "Landing page para una casa de cafe para mostrar menus y su historia",
+    img: coffee,
+    tag: ["react", "framerMotion"],
+    type: "Landing Page",
+    page: "https://coffee-house-beryl.vercel.app/",
+},{
     name: "El baron de la cerveza",
     description: "Plataforma para la compra y venta de bebidas alcoholicas en linea. Esta construida con tecnlogias modernas y escalables, ideal para pequeñas y medianas empresas",
     img: bdlc,
