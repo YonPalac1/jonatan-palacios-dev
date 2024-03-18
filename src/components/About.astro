@@ -1,35 +1,43 @@
 ---
-import { Image } from "astro:assets"
+import { Image } from "astro:assets";
 import Photo from "./Photo.astro";
-import { SKILLS } from "../constants/index"
+import { SKILLS } from "../constants/index";
 ---
 
 <section
     class="text-center uppercase pb-32 p-5 text-white pt-32 relative overflow-hidden"
     id="about"
 >
-<div class="m-auto gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:pl-64 xl:pr-64">
-    <div class="border border-double rounded-2xl fit-content overflow-hidden">
-        <Photo />
-    </div>
     <div
-    class="flex justify-center flex-col z-10 md:text-left"
-        >
+        class="m-auto gap-4 grid max-w-[1024px] m-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+    >
+        <Photo />
+        <div class="flex justify-center flex-col z-10 md:text-left">
             <h3 class="text-xl font-bold mb-5">
-                A passion for <span class="text-orange-400">learning</span>
+                Apsionado por el<span class="text-orange-400">aprendizaje</span>
             </h3>
             <p class="text-sm text-gray-200 leading-6">
-                me apasiona crear sitios web y aplicaciones que sean faciles de usar, visualmente atractivos y que cumplan con los objetivos de mis clientes. estoy siempre buscando nuevos retos y estoy dispuesto a aprender nuevas tecnlogias para mejorar mis habilidades.
+                me apasiona crear sitios web y aplicaciones que sean faciles de
+                usar, visualmente atractivos y que cumplan con los objetivos de
+                mis clientes. estoy siempre buscando nuevos retos y estoy
+                dispuesto a aprender nuevas tecnlogias para mejorar mis
+                habilidades.
             </p>
             <div class="grid grid-cols-5 gap-4">
                 {
                     SKILLS.map((item, i) => {
-                        return <Image src={item.img} class="w-[50px]" alt="item.name" />
+                        return (
+                            <Image
+                                src={item.img}
+                                class="w-[50px]"
+                                alt="item.name"
+                            />
+                        );
                     })
                 }
             </div>
+        </div>
     </div>
-</div>
     <div class="bg-box"></div>
 </section>
 <style>
@@ -40,13 +48,16 @@ import { SKILLS } from "../constants/index"
         height: 600px;
         left: -100px;
         bottom: -100px;
-        border-radius: 50px;
-        z-index: 0;
+        border-radius: 50px; 
         transform: rotate(25deg);
     }
     .border {
-        background: rgb(1,17,34);
-        background: radial-gradient(circle, rgb(2, 24, 48) 0%, rgba(3,15,29,1) 100%);  
+        background: rgb(1, 17, 34);
+        background: radial-gradient(
+            circle,
+            rgb(2, 24, 48) 0%,
+            rgba(3, 15, 29, 1) 100%
+        );
         z-index: 500;
     }
 </style>

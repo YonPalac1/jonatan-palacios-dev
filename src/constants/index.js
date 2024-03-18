@@ -14,12 +14,13 @@ import deplace from '../utils/works/img2.webp'
 import coffee from '../utils/works/img4.webp'
 
 export const WORKS = [{
-    name: "Coffe House | uploading...",
+    name: "Coffe House",
     description: "Landing page para una casa de cafe para mostrar menus y su historia",
     img: coffee,
     tag: ["react", "framerMotion"],
     type: "Landing Page",
     page: "https://coffee-house-beryl.vercel.app/",
+    sale: "free"
 },{
     name: "El baron de la cerveza",
     description: "Plataforma para la compra y venta de bebidas alcoholicas en linea. Esta construida con tecnlogias modernas y escalables, ideal para pequeñas y medianas empresas",
@@ -27,13 +28,15 @@ export const WORKS = [{
     tag: ["react", "redux", "nodejs", "mysql", "sequelize"],
     type: "Ecommerce",
     page: "https://baron-de-la-cerveza.vercel.app/",
+    sale: "free"
 }, {
     name: "Deplace maison",
     description: "Demo de plataforma Ecommerce con estilos en css y detalles de animación con framer motion",
     img: deplace,
     tag: ["react", "javascript", "magicMouse", "framerMotion"],
-    type: "Ecommerce | Demo",
-    page: "https://deplace-landing.vercel.app/"
+    type: "Ecommerce",
+    page: "https://deplace-landing.vercel.app/",
+    sale: "demo"
 }]
 
 export const SKILLS = [{
