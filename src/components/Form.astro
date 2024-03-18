@@ -29,7 +29,7 @@ import kid from "../utils/images/compuer-kid.gif";
       class="card border border-double rounded-2xl fit-content mt-4 p-6 relative"
     >
       <span class="text-orange-400 font-bold">Llevemos tus ideas al mundo</span>
-      <form action="https://formsubmit.co/1484cd437de095a69f6d642cad6b27ed" method="POST" id="form" class="shadow-md px-8 pt-6 pb-8 mb-4">
+      <form method="POST" id="form" class="shadow-md px-8 pt-6 pb-8 mb-4">
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
             Nombre
@@ -73,12 +73,11 @@ import kid from "../utils/images/compuer-kid.gif";
             type="submit"
             class="bg-orange-400 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="button"
+            name="send"
           >
             Enviar
           </button>
         </div>
-        <input type="hidden" name="_next" value="https://jonatan-palacios-dev.vercel.app/">
-        <input type="hidden" name="_captcha" value="false">
       </form>
       <a href="mailto:palaciosjonatan.dev@gmail.com" id="mailTo" style={{ opacity: 0 }}>email</a>
       <div class="img-container absolute">
@@ -87,6 +86,9 @@ import kid from "../utils/images/compuer-kid.gif";
     </div>
   </div>
 </div>
+<?php 
+  include("./mail.php")
+?>
 <style>
   div.card {
     background: rgb(1, 17, 34);
