@@ -1,0 +1,14 @@
+---
+import { Image } from "astro:assets";
+import { CERTIFICATIONS } from "../constants/index.js";
+import arrow from "../utils/images/flecha.png";
+---
+
+<div class="card div12">
+    <h2>certificados</h2>
+    <div>
+        <Image src={CERTIFICATIONS[0].img} alt="" />
+    </div>
+    
+    <Image class="arrow" src={arrow} alt="" />
+</div>
