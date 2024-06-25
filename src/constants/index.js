@@ -9,14 +9,9 @@ import img8 from '../utils/images/node.png'
 import img9 from '../utils/images/react.png'
 import img10 from '../utils/images/tailwind.png'
 
-import bdlc from '../utils/works/img2.webp'
-import deplace from '../utils/works/img1.webp'
-import coffee from '../utils/works/img3.webp'
-
-import alk from '../utils/cer/alkemy.png'
-import curso from '../utils/cer/curso.jpg'
-import digital from '../utils/cer/digital.png'
-import firebase from '../utils/cer/firebase.jpg'
+import bdlc from '../utils/works/img3.webp'
+import deplace from '../utils/works/img2.webp'
+import coffee from '../utils/works/img4.webp'
 
 export const WORKS = [{
     name: "Coffe House",
@@ -76,20 +71,3 @@ export const SKILLS = [{
     name:"next logo"
 },
 ]
-
-export const CERTIFICATIONS = [{
-    img: digital,
-    name: "Digital House",
-},
-{
-    img: alk,
-    name: "Alkemy",
-},
-{
-    img: curso,
-    name: "Diseño y desarrollo web fullstack",
-},
-{
-    img: firebase,
-    name: "Firebase",
-},]
