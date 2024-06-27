@@ -14,12 +14,12 @@ import { Image } from "astro:assets";
 ---
 
 <Layout title="Portfolio | Jonatan Palacios">
-    <!-- <div class="bg-black" id="black"></div>
+    <div class="bg-black" id="black"></div>
     <div class="bg-orange-400" id="loading">
-        <Image class="w-24" src={duck} alt="duck walking while the page is chargin" />
+        <!-- <Image class="w-24" src={duck} alt="duck walking while the page is chargin" /> -->
         <h1 class="text-orange-900 text-[30px]">{"<"} <span id="text"></span> {"/>"}</h1>
         <p id="chargin">cargando...</p>
-    </div> -->
+    </div>
     <Navbar />
     <Header />
     <Contact />
@@ -50,36 +50,36 @@ import { Image } from "astro:assets";
      }
 </style>
 <script>
-    // const loading = document.getElementById("loading")
-    // const black = document.getElementById("black")
-    // const text = document.getElementById("text")
-    // const chargin = document.getElementById("chargin")
+    const loading = document.getElementById("loading")
+    const black = document.getElementById("black")
+    const text = document.getElementById("text")
+    const chargin = document.getElementById("chargin")
 
-    // setTimeout(() => {
-    //     loading.style.top = "-100vh";
-    //     window.scrollTo(0,0);
-    //     setTimeout(() => {
-    //         loading.style.display = "none"
-    //     }, 4000)
-    // }, 4000)
-    // setTimeout(() => {
-    //     black.style.opacity = "0";
-    //     chargin.textContent = "Alli vamos";
+    setTimeout(() => {
+        loading.style.top = "-100vh";
+        window.scrollTo(0,0);
+        setTimeout(() => {
+            loading.style.display = "none"
+        }, 4000)
+    }, 4000)
+    setTimeout(() => {
+        black.style.opacity = "0";
+        chargin.textContent = "Alli vamos";
         
-    //     setTimeout(() => {
-    //         black.style.display = "none"
-    //     }, 4500)
-    // }, 4500)
-    // const worlds = ["React", "Nextjs", "Node", "MySql", "Astro", "Tailwind", "Api rest", "LaPala"]
-    // let index = 0
+        setTimeout(() => {
+            black.style.display = "none"
+        }, 4500)
+    }, 4500)
+    const worlds = ["React", "Nextjs", "Node", "MySql", "Astro", "Tailwind", "Api rest", "LaPala"]
+    let index = 0
 
-    // const showText = () => {
-    //     if (index >= worlds.length) {
-    //         index = 0
-    //     }
-    //     text.textContent = worlds[index]
-    //     index++
-    //     setTimeout(showText, 600) 
-    // }
-    // showText()
+    const showText = () => {
+        if (index >= worlds.length) {
+            index = 0
+        }
+        text.textContent = worlds[index]
+        index++
+        setTimeout(showText, 600) 
+    }
+    showText()
 </script>
