@@ -41,33 +41,33 @@ export const WORKS = [{
 
 export const SKILLS = [{
     img: img9,
-    name: "react logo"
+    name: "react"
 },{
     img: img8,
-    name:"node logo"
+    name:"node"
 },{
     img: img6,
-    name:"javascript logo"
+    name:"javascript"
 },{
     img: img1,
-    name: "astro logo"
+    name: "astro"
 },{
     img: img2,
-    name: "css logo"
+    name: "css"
 },{
     img: img3,
-    name: "figma logo"
+    name: "figma"
 },{
     img: img4,
-    name:"git logo"
+    name:"git"
 },{
     img: img5,
-    name:"html logo"
+    name:"html"
 },{
     img: img10,
     name:"Tailwind"
 },{
     img: img7,
-    name:"next logo"
+    name:"next"
 },
 ]

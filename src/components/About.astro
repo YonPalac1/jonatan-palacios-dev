@@ -1,10 +1,9 @@
 ---
-import { Image } from "astro:assets";
 import Photo from "./Photo.astro";
-import { SKILLS } from "../constants/index";
+import Skills from "./Skills.astro";
 ---
 
-<section
+<div
     class="text-center uppercase pb-32 p-5 text-white pt-32 relative overflow-hidden"
     id="about"
 >
@@ -24,23 +23,11 @@ import { SKILLS } from "../constants/index";
                 dispuesto a aprender nuevas tecnlogias para mejorar mis
                 habilidades.
             </p>
-            <div class="grid grid-cols-5 gap-4">
-                {
-                    SKILLS.map((item, i) => {
-                        return (
-                            <Image
-                                src={item.img}
-                                class="w-[50px]"
-                                alt="item.name"
-                            />
-                        );
-                    })
-                }
-            </div>
+            <Skills />
         </div>
     </div>
     
-</section>
+</div>
 <style>
     .bg-box {
         background-color: #061323;
@@ -61,4 +48,5 @@ import { SKILLS } from "../constants/index";
         );
         z-index: 500;
     }
+    
 </style>
