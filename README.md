@@ -15,7 +15,7 @@ En este portfolio, podrás ver algunos de mis proyectos más destacados. He sele
 
 Aquí te dejo algunos enlaces para que puedas conocerme mejor:
 
-Portafolio: (https://www.canva.com/es_mx/crear/portafolios-digitales/](https://jonatan-palacios-dev.vercel.app/)
+Portafolio: https://jonatan-palacios-dev.vercel.app/
     LinkedIn: https://www.linkedin.com/in/palacios-yonatan/
     Correo electrónico: palaciosjonatan.dev@gmail.com
 
