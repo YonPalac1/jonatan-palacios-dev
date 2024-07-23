@@ -1,14 +1,47 @@
 ---
 import { Image } from "astro:assets";
 import { CERTIFICATIONS } from "../constants/index.js";
-import arrow from "../utils/images/flecha.png";
 ---
 
-<div class="card div12">
-    <h2>certificados</h2>
-    <div>
-        <Image src={CERTIFICATIONS[0].img} alt="" />
-    </div>
-    
-    <Image class="arrow" src={arrow} alt="" />
+<div class="grid grid-cols-2 gap-4">
+    {
+        CERTIFICATIONS.map((item, i) => {
+            return (
+                <div  class="tooltip">
+            <span class="tooltiptext">{item.name}</span>
+                <Image
+                    src={item.img}
+                    class="images"
+                    alt="item.name"
+                    />
+                </div>
+            );
+        })
+    }
 </div>
+<style>
+    .tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+    }
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 100;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -60px;
+        }
+        .tooltip:hover .tooltiptext {
+        visibility: visible;
+        }
+</style>

@@ -5,12 +5,24 @@ import Skills from "./Skills.astro";
 <section
     class="relative overflow-hidden uppercase p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-24 p-2 text-white gap-4 md:p-24"
 >
-    <div class="card border rounded-2xl p-5">
+    <div class="card border text-center rounded-2xl p-5">
         <h3 class="mb-3 font-bold text-x">Experiencia</h3>
-        <h3 class="font-bold text-xl mb-[50px]">
+        <h3 class="font-bold text-xl mb-5">
             <span class="text-orange-400">5 años</span>
             codeando
         </h3>
+
+        <span>Github</span>
+
+        <p class="text-orange-400 text-sm mb-5">
+            <a
+                class="flex justify-center align-center"
+                href="https://github.com/YonPalac1"
+                target="_blank">ir a repositorios
+                <svg class="icon icon-tabler icon-tabler-arrow-right-square text-red-400 text-sm pb-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 12l14 0" /><path d="M18 15l3 -3l-3 -3" /><path d="M3 10h4v4h-4z" /></svg>
+            </a>
+        </p>
+
         <a 
         href="https://www.linkedin.com/in/palacios-yonatan/"
         class="flex justify-center bg-orange-400 w-full p-2"
@@ -68,8 +80,8 @@ import Skills from "./Skills.astro";
         </div>
     </div>
 
-    <div class="text-right card border border-double rounded-2xl p-5">
-        <h3 class="mb-3 font-bold text-x mb-5">Stack</h3>
+    <div class="text-center card border border-double rounded-2xl p-5">
+        <h3 class="mb-3 font-bold text-x">Stack</h3>
         <Skills />
     </div>
 

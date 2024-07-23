@@ -22,9 +22,10 @@ import banner from "../utils/images/capibara-banner.png";
                 </div>
                 <section class="text-center pl-1 lg:text-left">
                     <div class="p-2 text-center lg:text-left">
-                        <h4 class="font-bold text-orange-400 pb-3">{item.name} | <span class="text-white">{item.type}</span>  <span class="absolute bg-gray-700 text-sm pl-2 pr-2 ml-5 rounded z-100">{item.sale}</span></h4>
+                        <h4 class="font-bold text-orange-400 pb-3">{item.name} | <span class="text-white">{item.type}</span></h4>
                         <p class="text-xs leading-6">{item.description}</p>
-                        <a href={item.page} class="flex justify-center lg:justify-start mt-5" target="_blank">Visitar <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M15 9l-6 6" /><path d="M15 15v-6h-6" /></svg></a>
+                        
+                        <a href={item.repo} class="flex justify-center lg:justify-start mt-5" target="_blank">Ver proyecto<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M15 9l-6 6" /><path d="M15 15v-6h-6" /></svg></a>
                     </div>
                 </section>
             </div>
@@ -38,16 +39,40 @@ import banner from "../utils/images/capibara-banner.png";
     img.project {
         cursor: crosshair;
         transition: .5s;
+        height: 100%;
     }
     img.project:hover {
         scale: 1.2;
     }
     .banner a {
-        top: -100px;
-        left: 250px;
+        font-size: 10px;
+        top: -40px;
+        left: 100px;
         position: relative;
         background: #202EAE;
-        padding: 20px 20px;
+        padding: 10px 10px;
         border-radius: 10px;
+    }
+    @media screen and (min-width: 550px) {
+        .banner a {
+            left: 150px;
+            top: -50px;
+        }
+    }
+    @media screen and (min-width: 780px) {
+        .banner a {
+            left: 200px;
+            top: -50px;
+            font-size: 15px;
+            padding: 15px 15px;
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        .banner a {
+            left: 250px;
+            top: -80px;
+            font-size: 15px;
+            padding: 20px 20px;
+        }
     }
 </style>

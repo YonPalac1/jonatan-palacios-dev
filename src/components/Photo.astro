@@ -3,3 +3,13 @@ import { Image } from "astro:assets";
 import photo from "../utils/images/portrait.webp";
 ---
     <Image src={photo} alt="Foto desarrollador web" class="rounded-2xl m-auto w-[360px] z-50" />
+
+    <style>
+        @media screen and (min-width: 768px) {
+            img {
+                margin-top: -10px;
+                position: sticky;
+                top: 3rem;
+            }
+        }
+    </style>
