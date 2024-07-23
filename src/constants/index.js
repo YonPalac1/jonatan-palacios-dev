@@ -26,8 +26,8 @@ export const WORKS = [{
     img: chat,
     tag: ["React", "Node.js, Socket.io"],
     type: "aplicacion",
-    repo: "",
-    page: "no"
+    repo: "https://github.com/YonPalac1/super-suport",
+    page: "https://github.com/YonPalac1/super-suport"
 },{
     name: "Coffe House",
     description: "Landing page para una casa de cafe para mostrar menus y su historia",
