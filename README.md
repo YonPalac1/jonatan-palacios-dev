@@ -1,54 +1,24 @@
-# Astro Starter Kit: Basics
+Jonatan: Desarrollador Web Fullstack con Pasión por la Innovación
 
-```sh
-npm create astro@latest -- --template basics
-```
+¡Hola! Soy Jonatan, un apasionado desarrollador web fullstack con 5 años de experiencia. Me especializo en crear experiencias web impactantes y funcionales utilizando las últimas tecnologías. A lo largo de mi carrera, he trabajado en una amplia gama de proyectos, desde sitios web simples hasta aplicaciones web complejas. Soy un experto en:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+    Desarrollo front-end: HTML, CSS, JavaScript, TypeScript, React,
+    Desarrollo back-end: Node.js, Python, Express
+    Bases de datos: MySQL, MongoDB
+    Implementación de DevOps: Git, Docker
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Mi pasión por la tecnología me impulsa a estar siempre actualizado con las últimas tendencias y herramientas. Me encanta aprender cosas nuevas y aplicarlas en mis proyectos para crear soluciones innovadoras y eficientes. Soy un trabajador dedicado y autodidacta, con una gran capacidad para resolver problemas y trabajar en equipo.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+En este portfolio, podrás ver algunos de mis proyectos más destacados. He seleccionado cuidadosamente cada uno de ellos para mostrar mis habilidades y experiencia en diferentes áreas del desarrollo web. También podrás encontrar información sobre mi formación académica, experiencia laboral y habilidades blandas.
 
-## 🚀 Project Structure
+¿Estás buscando un desarrollador web fullstack confiable y experimentado? ¡No dudes en contactarme! Estoy disponible para trabajar en proyectos freelance o a tiempo completo.
 
-Inside of your Astro project, you'll see the following folders and files:
+Aquí te dejo algunos enlaces para que puedas conocerme mejor:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Portafolio: https://jonatan-palacios-dev.vercel.app/
+    LinkedIn: https://www.linkedin.com/in/palacios-yonatan/
+    Correo electrónico: palaciosjonatan.dev@gmail.com
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+¡Espero poder trabajar contigo pronto!
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+¡Soy un desarrollador web versátil y siempre estoy buscando nuevos desafíos!
