@@ -34,7 +34,7 @@ export const WORKS = [{
     img: coffee,
     tag: ["react", "framerMotion"],
     type: "Landing Page",
-    rep: "https://github.com/YonPalac1/coffee-house",
+    repo: "https://github.com/YonPalac1/coffee-house",
     page: "https://coffee-house-beryl.vercel.app/"
 },{
     name: "El baron de la cerveza",
