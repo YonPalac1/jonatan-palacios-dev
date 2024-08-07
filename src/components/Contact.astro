@@ -1,91 +1,64 @@
 ---
+import Photo from "./Photo.astro";
 import Skills from "./Skills.astro";
 ---
 
 <section
-    class="relative overflow-hidden uppercase p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-24 p-2 text-white gap-4 md:p-24"
+    class="relative overflow-hidden uppercase p-5 grid grid-cols-1 md:grid-cols-2 pb-24 p-2 text-white gap-4 md:p-24"
 >
-    <div class="card border text-center rounded-2xl p-5">
-        <h3 class="mb-3 font-bold text-x">Experiencia</h3>
-        <h3 class="font-bold text-xl mb-5">
-            <span class="text-orange-400">5 años</span>
-            codeando
+    <Photo />    
+
+    <div class="flex justify-center flex-col z-10 md:text-left">
+        <h3 class="text-xl font-bold mb-5">
+            Apsionado por el<span class="text-orange-400">aprendizaje</span>
         </h3>
-
-        <span>Github</span>
-
-        <p class="text-orange-400 text-sm mb-5">
-            <a
-                class="flex justify-center align-center"
-                href="https://github.com/YonPalac1"
-                target="_blank">ir a repositorios
-                <svg class="icon icon-tabler icon-tabler-arrow-right-square text-red-400 text-sm pb-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 12l14 0" /><path d="M18 15l3 -3l-3 -3" /><path d="M3 10h4v4h-4z" /></svg>
-            </a>
+        <p class="text-sm text-gray-200 leading-6">
+            me apasiona crear sitios web y aplicaciones que sean faciles de
+            usar, visualmente atractivos y que cumplan con los objetivos de
+            mis clientes. estoy siempre buscando nuevos retos y estoy
+            dispuesto a aprender nuevas tecnlogias para mejorar mis
+            habilidades.
         </p>
+        <div class="rounded-2xl">
+            <Skills />
 
-        <a 
-        href="https://www.linkedin.com/in/palacios-yonatan/"
-        class="flex justify-center bg-orange-400 w-full p-2"
-            >CV
-            <svg
-                class="icon icon-tabler icon-tabler-corner-right-down text-red-800"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                    d="M6 6h6a3 3 0 0 1 3 3v10l-4 -4m8 0l-4 4"></path></svg
-            >
-    </a>
-    </div>
-
-    <div class="card text-center border border-double rounded-2xl p-5">
-        <h3 class="mb-3 font-bold text-x">Contactame</h3>
-
-        <div class="mb-3">
-            <p class="text-orange-400 text-sm">
-                <a
-                    class="flex justify-center align-center"
-                    href="https://www.linkedin.com/in/palacios-yonatan/"
-                    target="_blank">ir a linkedin
-                    <svg class="icon icon-tabler icon-tabler-arrow-right-square text-red-400 text-sm pb-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 12l14 0" /><path d="M18 15l3 -3l-3 -3" /><path d="M3 10h4v4h-4z" /></svg>
-                </a>
-            </p>
-        </div>
-        <div class="mb-3">
-            <p class="text-orange-400 text-sm">
-                <a href="mailto:palaciosjonatan.dev@gmail.com" class="flex justify-center align-center"> ir a email 
-                    <svg class="icon icon-tabler icon-tabler-arrow-right-square text-red-400 text-sm pb-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 12l14 0" /><path d="M18 15l3 -3l-3 -3" /><path d="M3 10h4v4h-4z" /></svg>
-                </a>
-            </p>
-
-            <span>palaciosjonatan.dev@gmail.com</span>
-        </div>
-        <div class="mb-3">
-            <p class="text-orange-400 text-sm">
-                <a href="https://wa.me/1139366942" class="flex justify-center align-center"> ir a whatsapp 
-                    <svg class="icon icon-tabler icon-tabler-arrow-right-square text-red-400 text-sm pb-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 12l14 0" /><path d="M18 15l3 -3l-3 -3" /><path d="M3 10h4v4h-4z" /></svg>
-                </a>
-            </p>
-
-            <span>9 11 3936 6942</span>
-        </div>
-        <div>
-            <p class="text-orange-400 text-sm">De donde soy?</p>
-            <span>Buenos Aires, Argentina</span>
+            <div class="grid grid-cols-2 mt-5">            
+                <div class="mb-3">
+                    <p class="text-orange-400 text-sm">
+                        <a
+                            class="flex"
+                            href="https://www.linkedin.com/in/palacios-yonatan/"
+                            target="_blank">ir a linkedin
+                            <svg class="icon icon-tabler icon-tabler-arrow-right-square text-red-400 text-sm pb-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 12l14 0" /><path d="M18 15l3 -3l-3 -3" /><path d="M3 10h4v4h-4z" /></svg>
+                        </a>
+                    </p>
+                    <span>/in/palacios-yonatan/</span>
+                </div>
+                <div class="mb-3">
+                    <p class="text-orange-400 text-sm">
+                        <a href="mailto:palaciosjonatan.dev@gmail.com" class="flex"> ir a email 
+                            <svg class="icon icon-tabler icon-tabler-arrow-right-square text-red-400 text-sm pb-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 12l14 0" /><path d="M18 15l3 -3l-3 -3" /><path d="M3 10h4v4h-4z" /></svg>
+                        </a>
+                    </p>
+            
+                    <span>palaciosjonatan.dev@gmail.com</span>
+                </div>
+                <div class="mb-3">
+                    <p class="text-orange-400 text-sm">
+                        <a href="https://wa.me/1139366942" class="flex"> ir a whatsapp 
+                            <svg class="icon icon-tabler icon-tabler-arrow-right-square text-red-400 text-sm pb-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 12l14 0" /><path d="M18 15l3 -3l-3 -3" /><path d="M3 10h4v4h-4z" /></svg>
+                        </a>
+                    </p>
+            
+                    <span>9 11 3936 6942</span>
+                </div>
+                <div>
+                    <p class="text-orange-400 text-sm">De donde soy?</p>
+                    <span>Buenos Aires, Argentina</span>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="text-center card border border-double rounded-2xl p-5">
-        <h3 class="mb-3 font-bold text-x">Stack</h3>
-        <Skills />
-    </div>
-
-    <div class="bg-box"></div>
 </section>
 <style>
     .card {
@@ -96,16 +69,5 @@ import Skills from "./Skills.astro";
             rgba(3, 15, 29, 1) 100%
         );
         z-index: 500;
-    }
-    div.bg-box {
-        background-color: #061323;
-        position: absolute;
-        width: 600px;
-        height: 600px;
-        right: -100px;
-        top: -100px;
-        border-radius: 50px;
-        z-index: 0;
-        transform: rotate(25deg);
     }
 </style>

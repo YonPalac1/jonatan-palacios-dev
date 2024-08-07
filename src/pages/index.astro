@@ -16,17 +16,15 @@ import { Image } from "astro:assets";
 <Layout title="Portfolio | Jonatan Palacios">
     <div class="bg-black" id="black"></div>
     <div class="bg-orange-400" id="loading">
-        <!-- <Image class="w-24" src={duck} alt="duck walking while the page is chargin" /> -->
+        <Image class="w-24" src={duck} alt="duck walking while the page is chargin" />
         <h1 class="text-orange-900 text-[30px]">{"<"} <span id="text"></span> {"/>"}</h1>
         <p id="chargin">cargando...</p>
-    </div>
+    </div> 
     <Navbar />
     <Header />
+    <Marquee />
     <Contact />
     <Works />
-    <Marquee />
-    <About />
-    <!-- <Form /> -->
     <Footer />
 </Layout>
 <style>
