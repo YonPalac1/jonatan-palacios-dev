@@ -9,10 +9,13 @@ import img8 from '../utils/images/node.png'
 import img9 from '../utils/images/react.png'
 import img10 from '../utils/images/tailwind.png'
 
-import chat from '../utils/works/img1.png'
-import deplace from '../utils/works/img2.webp'
+import magma from '../utils/works/img1.png'
+import loscuatroamaneceres from '../utils/works/img2.png'
 import bdlc from '../utils/works/img3.webp'
 import coffee from '../utils/works/img4.webp'
+import glo from '../utils/works/img5.png'
+import tucontador from '../utils/works/img6.png'
+import retrotoons from '../utils/works/img7.png'
 
 import alkemy from '../utils/cer/alkemy.png'
 import curso from '../utils/cer/curso.jpg'
@@ -21,19 +24,44 @@ import excel from '../utils/cer/excel.jpg'
 import firebase from '../utils/cer/firebase.jpg'
 
 export const WORKS = [{
-    name: "Chat en vivo",
-    description: "Chat en vivo para consultas con administrador, hecho con socket, node y react",
-    img: chat,
-    tag: ["React", "Node.js, Socket.io"],
+    name: "Magma vial",
+    description: "landing page para empresa de maquinaria agricola, vial y logistica",
+    img: magma,
+    tag: ["Bootstrap", "css", "Javascript"],
     type: "aplicacion",
-    repo: "https://github.com/YonPalac1/super-suport",
-    page: "https://github.com/YonPalac1/super-suport"
+    repo: "https://magmavial.com.ar/",
+    page: "https://magmavial.com.ar/"
+}, {
+    name: "los cuatro amaneceres",
+    description: "Landing page e contacto e informacion para un complejo dedicado a brindar servicios de retiro.",
+    img: loscuatroamaneceres,
+    tag: ["react", "javascript", "Nodejs", "framerMotion"],
+    type: "Landing Page",
+    repo: "https://loscuatroamaneceres.com.ar/",
+    page: "https://loscuatroamaneceres.com.ar/"
+},
+{
+    name: "Glo - Apart Hotel",
+    description: "Diseño de landing para hotel",
+    img: glo,
+    tag: ["css", "desing"],
+    type: "Landing Page",
+    repo: "https://gloaparthotel.com.ar/",
+    page: "https://gloaparthotel.com.ar/"
+}, {
+    name: "Tu contador online",
+    description: "Demo de plataforma Ecommerce con estilos en css y detalles de animación con framer motion",
+    img: tucontador,
+    tag: ["react", "javascript", "Nodejs", "Tailwind", "css"],
+    type: "Landing Page",
+    repo: "https://tucontador.ar/",
+    page: "https://tucontador.ar/"
 },{
     name: "Coffe House",
     description: "Landing page para una casa de cafe para mostrar menus y su historia",
     img: coffee,
     tag: ["react", "framerMotion"],
-    type: "Landing Page",
+    type: "Landing Page - demo",
     repo: "https://github.com/YonPalac1/coffee-house",
     page: "https://coffee-house-beryl.vercel.app/"
 },{
@@ -41,17 +69,17 @@ export const WORKS = [{
     description: "Plataforma para la compra y venta de bebidas alcoholicas en linea. Esta construida con tecnlogias modernas y escalables, ideal para pequeñas y medianas empresas",
     img: bdlc,
     tag: ["react", "redux", "nodejs", "mysql", "sequelize"],
-    type: "Ecommerce",
+    type: "Ecommerce - demo",
     repo: "https://github.com/YonPalac1/baron-de-la-cerveza",
     page: "https://baron-de-la-cerveza.vercel.app/"
-}, {
-    name: "Deplace maison",
-    description: "Demo de plataforma Ecommerce con estilos en css y detalles de animación con framer motion",
-    img: deplace,
-    tag: ["react", "javascript", "magicMouse", "framerMotion"],
-    type: "Ecommerce",
-    repo: "https://github.com/YonPalac1/deplace-landing",
-    page: "https://deplace-landing.vercel.app/"
+},{
+    name: "Remeras RetroToons",
+    description: "Landing page demo para una empresa de remeras",
+    img: retrotoons,
+    tag: ["react", "redux", "nodejs", "mysql", "sequelize"],
+    type: "Landing Page - demo",
+    repo: "https://github.com/YonPalac1/retrotoons-tees/",
+    page: "https://retrotoons-tees.vercel.app/"
 }]
 
 export const SKILLS = [{
